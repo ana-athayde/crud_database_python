@@ -1,8 +1,8 @@
+#import Conexao
 import mysql.connector
-import Conexao
 
 mydb = mysql.connector.connect(
-    host="3306",
+    host="localhost",
     user="root",
     password="1234",
     database="projeto_reciclagemDB"
@@ -10,7 +10,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-class Maquinas():
+class Maquina():
     def all_maquinas(self, mode="DESC"):
         sql = "SELECT * FROM maquinas ORDER BY id {}".format(mode)
         mycursor.execute(sql)
@@ -19,21 +19,20 @@ class Maquinas():
         mycursor.execute("CREATE TABLE maquinas ( \
                             idmaq int not null auto_increment,\
                             tpmaterial varchar(50) not null,\
-                            anocompra date not null,\
-                            anoulrev date nut null,\
+                            anocompra varchar(50) not null,\
+                            anoulrev varchar(50) not null,\
                             nome varchar(50) not null,\
                             tipo varchar(50) not null,\
                             valor double not null,\
                             descricao varchar(50) not null,\
                             idfilial int,\
-                            PRIMARY KEY (idmaq),\
-                            FOREIGN KEY (idfilial) REFERENCES filiais\
+                            PRIMARY KEY (idmaq)\
                             );")
 
-    def insert_into(tpmaterial, anocompra, anoulrev, nome, tipo, valor, descricao, idfilial):
-        #checar: anocompra, anolrev
-        sql = f'INSERT INTO maquinas (tpmaterial, anocompra, anoulrev, nome, tipo, valor, descricao, idfilial)\
-                     VALUES ("{tpmaterial}", {anocompra}, {anoulrev}, "{nome}", "{tipo}", {valor}, "{descricao}", {idfilial})'
+    def insert_into(values):
+        query = '''INSERT INTO maquinas (tpmaterial, anocompra, anoulrev, nome, tipo, valor, descricao, idfilial) VALUES (%s, %s, %s, %s, %s, %s, %s, %s) '''
+        mycursor.execute(query, values)
+        mydb.commit()
    
     def select():
         print("")

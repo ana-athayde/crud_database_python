@@ -1,6 +1,6 @@
 # crud_database_python
 
-História do trabalho:
+### História do trabalho:
 
 Nossa empresa foi contratada para modelar um banco de dados para uma companhia de reciclagem de lixo com várias filiais responsáveis por uma única cidade, embora cada cidade possa ser servida por mais de uma filial.  A coleta de material pode ser realizada por meio de um fornecedor ou por caminhões da própria organização. Cada caminhão conta com um motorista e dois garis, e realiza um trecho específico, definido por um ponto de partida e chegada.
 

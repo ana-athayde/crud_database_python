@@ -41,3 +41,7 @@ Após a coleta e separação, cada tipo de lixo é enviado para uma empresa. Cad
 ![10](https://user-images.githubusercontent.com/74029052/180779380-227845fd-6af7-4ee1-afe0-8c8e6cf36140.png)
 ![11](https://user-images.githubusercontent.com/74029052/180779394-fa515999-8a4a-4120-9d03-7b04082d4546.png)
 
+img[src$="centerme"]{
+  display:block;
+  margin: 0 auto;
+}

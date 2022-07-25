@@ -26,7 +26,7 @@ Após a coleta e separação, cada tipo de lixo é enviado para uma empresa. Cad
 - Compra(#&idmate, #&cnpjfor, datacom, #qtdmaterial)
 
 
-![1](https://user-images.githubusercontent.com/74029052/180779159-409f6d85-d403-4a94-8c1e-541c08cd8042.png){width="800" height="600" style="display: block; margin: 0 auto"}
+![1](https://user-images.githubusercontent.com/74029052/180779159-409f6d85-d403-4a94-8c1e-541c08cd8042.png){ width="800" height="600" style="display: block; margin: 0 auto" }
 
 
 ![2](https://user-images.githubusercontent.com/74029052/180779196-a61889b1-11bf-4d55-b05c-97a7fad7be16.png)

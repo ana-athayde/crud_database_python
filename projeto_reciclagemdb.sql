@@ -197,7 +197,6 @@ WHERE idmaq = 1;
 
 SELECT maquinas.nome 
 FROM filiais
-
 JOIN maquinas ON maquinas.idFilial = filiais.idFilial
 WHERE filiais.idFilial = 2;
 

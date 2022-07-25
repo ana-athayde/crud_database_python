@@ -25,7 +25,7 @@ Após a coleta e separação, cada tipo de lixo é enviado para uma empresa. Cad
 - Venda(#&idmate, #&cnpjcli, dataven, #qtdmaterial)
 - Compra(#&idmate, #&cnpjfor, datacom, #qtdmaterial)
 
-<p align="center">
+
 ![1](https://user-images.githubusercontent.com/74029052/180779159-409f6d85-d403-4a94-8c1e-541c08cd8042.png)
 ![2](https://user-images.githubusercontent.com/74029052/180779196-a61889b1-11bf-4d55-b05c-97a7fad7be16.png)
 ![3](https://user-images.githubusercontent.com/74029052/180779210-6d0b8d25-8b3b-49f6-96e8-4ba55dc0d6a7.png)
@@ -38,4 +38,4 @@ Após a coleta e separação, cada tipo de lixo é enviado para uma empresa. Cad
 ![9](https://user-images.githubusercontent.com/74029052/180779365-9def0dc7-0394-440d-82e9-ba893b70ab12.png)
 ![10](https://user-images.githubusercontent.com/74029052/180779380-227845fd-6af7-4ee1-afe0-8c8e6cf36140.png)
 ![11](https://user-images.githubusercontent.com/74029052/180779394-fa515999-8a4a-4120-9d03-7b04082d4546.png)
- </p>
+

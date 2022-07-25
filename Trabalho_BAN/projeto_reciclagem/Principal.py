@@ -5,9 +5,6 @@ from Materiais import Materiais as mat
 from Filiais import Filiais as fil
 from Cidades import Cidades as cid
 
-mydb = con.connect()
-mycursor = mydb.cursor()
-
 #Criar banco de dados
 #CREATE DATABASE projeto_reciclagemDB;
 
@@ -100,6 +97,9 @@ def join():
     print("Todas as máquinas da filial com o id inserido:")
     id = input("Digite o id: \n")
 
+    mydb = con.connect()
+    mycursor = mydb.cursor()
+
     mycursor.execute("SELECT maquinas.nome\
                         FROM filiais\
                         JOIN maquinas ON maquinas.idFilial = filiais.idFilial\
@@ -108,7 +108,13 @@ def join():
     for x in mycursor:
         print(x)
 
+    mycursor.close()
+    mydb.close()
+
 def agregacao():
+    mydb = con.connect()
+    mycursor = mydb.cursor()
+
     print("Nome da filiais com as máquinas mais caras: \n")
     mycursor.execute("SELECT filiais.nome\
                         FROM filiais\
@@ -117,6 +123,9 @@ def agregacao():
                         ")
     for x in mycursor:
         print(x)
+
+    mycursor.close()
+    mydb.close()
 
 while(op):
     print("------- MENU -------")

@@ -115,8 +115,6 @@ def agregacao():
                         JOIN maquinas ON maquinas.idFilial = filiais.idFilial\
                         WHERE maquinas.valor = (SELECT max(valor) FROM maquinas);\
                         ")
-
-    # mycursor.execute("SELECT filiais.nome FROM filiais JOIN maquinas ON maquinas.idFilial = filiais.idFilial WHERE maquinas.valor = (SELECT max(valor) FROM maquinas)")
     for x in mycursor:
         print(x)
 
